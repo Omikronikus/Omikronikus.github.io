@@ -29,11 +29,11 @@ display: -ms-flex;
 display: -o-flex;
 display: flex;
 padding-top: 0px;
-width: 250px;
+width: 400px;
 }
 
 #sidebar{
-width: 190px;
+width: 400px;
 height: 94vh;
 max-height: 94vh;
 background-image: url('../img/2.jpg');
