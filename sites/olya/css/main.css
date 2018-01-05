@@ -1,0 +1,73 @@
+body {
+background-image: url('http://lorempixel.com/400/200');
+margin: 0px;
+padding: 0px;
+max-width: 100%;
+width: 100%;
+font-family: Trebuchet MS;
+}
+#Page {
+margin: 0px;
+padding: 0px;
+}
+#Up {
+width: 78%;
+min-width: 78%;
+background-color: rgba(112, 29, 29, 0.8);
+font-size: 25px;
+padding: 20px;
+margin-top: 70px;
+margin-right: 0px;
+margin-left: 0px;
+margin-bottom: 0px;
+float: right;
+}
+#row{
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display: -o-flex;
+display: flex;
+padding-top: 0px;
+width: 250px;
+}
+
+#sidebar{
+width: 190px;
+height: 94vh;
+max-height: 94vh;
+background-image: url("http://lorempixel.com/");
+padding: 18px;
+margin-top: 0px;
+font-size: 50px;
+}
+.vzhzh{
+margin-top: 0px;
+margin-left: 0px;
+height: 15vh;
+width: 250px;
+background-color: grey;
+}
+#me{
+float: bottom;
+}
+.vzhzh:hover {
+background-color: pink;
+transform: rotate(360deg);
+transition: 1s;
+border-radius: 50%
+}
+#Bottom {
+width: 78%;
+min-width: 78%;
+background-color: rgba(182, 181, 82, 0.7);
+font-size: 23px;
+padding: 17px;
+margin-top: -100px;
+margin-right: 0px;
+margin-left: 0px;
+margin-bottom: 0px;
+float: right;
+}
+a{
+color: black;
