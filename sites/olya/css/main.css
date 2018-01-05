@@ -1,5 +1,5 @@
 body {
-background-image: url('http://lorempixel.com/400/200');
+background-image: url('img/1.jpg');
 margin: 0px;
 padding: 0px;
 max-width: 100%;
@@ -36,7 +36,7 @@ width: 250px;
 width: 190px;
 height: 94vh;
 max-height: 94vh;
-background-image: url("http://lorempixel.com/");
+background-image: url("img/2.jpg");
 padding: 18px;
 margin-top: 0px;
 font-size: 50px;
