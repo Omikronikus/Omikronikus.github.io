@@ -1,6 +1,16 @@
+<<<<<<< HEAD
 *::-webkit-input-placeholder {
 	color: #666;
 	opacity: 1;
+=======
+body {
+background-image: url('../img/1.jpg');
+margin: 0px;
+padding: 0px;
+max-width: 100%;
+width: 100%;
+font-family: Trebuchet MS;
+>>>>>>> f1ac8332c6bd9e98fdb7c4980a63b4c39c3b0842
 }
 *:-moz-placeholder {
 	color: #666;
@@ -15,6 +25,7 @@
 	opacity: 1;
 }
 
+<<<<<<< HEAD
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
 	
@@ -34,6 +45,23 @@ html.js .loader {
 	top: 0;
 	width: 100%;
 	z-index: 9999;
+=======
+#sidebar{
+width: 250px;
+height: 94vh;
+max-height: 94vh;
+background-image: url('../img/2.jpg');
+padding: 18px;
+margin-top: 0px;
+font-size: 50px;
+}
+.vzhzh{
+margin-top: 500px;
+margin-left: 0px;
+height: 15vh;
+width: 100px;
+background-color: grey;
+>>>>>>> f1ac8332c6bd9e98fdb7c4980a63b4c39c3b0842
 }
 html.js .loader_inner {
 	background-image: url("../img/preloader.gif");
