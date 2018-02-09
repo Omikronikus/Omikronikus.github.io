@@ -1,14 +1,52 @@
 $(function() {
-var height = $('main').height();
-$('.aside').height(height);
-var owl = $('.owl-carousel');
-	owl.owlCarousel({
-		loop: true,
-		autoplay: true,
-		items: 2,
-		margin: 10,
-		dots: true
+
+	//SVG Fallback
+	if(!Modernizr.svg) {
+		$("img[src*='svg']").attr("src", function() {
+			return $(this).attr("src").replace(".svg", ".png");
+		});
+	};
+
+var clock = $('.your-clock').FlipClock({
+	autoStart: false
+});
+
+var dt = "Feb 11 2018 20:30:00";
+var first = new Date(dt);
+var last = Date.now();
+var rem = first-last;
+rem/=1000;
+clock.setCountdown(true);
+var time  = clock.getTime();
+clock.setTime(rem);
+clock.start();
+	//E-mail Ajax Send
+	//Documentation & Example: https://github.com/agragregra/uniMail
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Thank you!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
 	});
+
+	//Chrome Smooth Scroll
+	try {
+		$.browserSelector();
+		if($("html").hasClass("chrome")) {
+			$.smoothScroll();
+		}
+	} catch(err) {
+
+	};
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 	
@@ -20,6 +58,3 @@ $(window).load(function() {
 	$(".loader").delay(400).fadeOut("slow");
 
 });
-$(window).on('load', function(){
-	$('.wrapper').delay(3000).fadeOut('slow');
-})

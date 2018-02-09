@@ -1,73 +1,64 @@
-body {
-background-image: url('http://lorempixel.com/400/200');
-margin: 0px;
-padding: 0px;
-max-width: 100%;
-width: 100%;
-font-family: Trebuchet MS;
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
 }
-#Page {
-margin: 0px;
-padding: 0px;
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
 }
-#Up {
-width: 78%;
-min-width: 78%;
-background-color: rgba(112, 29, 29, 0.8);
-font-size: 25px;
-padding: 20px;
-margin-top: 70px;
-margin-right: 0px;
-margin-left: 0px;
-margin-bottom: 0px;
-float: right;
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
 }
-#row{
-display: -webkit-flex;
-display: -moz-flex;
-display: -ms-flex;
-display: -o-flex;
-display: flex;
-padding-top: 0px;
-width: 250px;
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
 }
 
-#sidebar{
-width: 190px;
-height: 94vh;
-max-height: 94vh;
-background-image: url("http://lorempixel.com/");
-padding: 18px;
-margin-top: 0px;
-font-size: 50px;
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
 }
-.vzhzh{
-margin-top: 0px;
-margin-left: 0px;
-height: 15vh;
-width: 250px;
-background-color: grey;
+body input:required:valid,
+body textarea:required:valid {
+	
 }
-#me{
-float: bottom;
+
+html.js .loader {
+	background: none repeat scroll 0 0 #ffffff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
 }
-.vzhzh:hover {
-background-color: pink;
-transform: rotate(360deg);
-transition: 1s;
-border-radius: 50%
+html.js .loader_inner {
+	background-image: url("../img/preloader.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	margin-left: -30px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
 }
-#Bottom {
-width: 78%;
-min-width: 78%;
-background-color: rgba(182, 181, 82, 0.7);
-font-size: 23px;
-padding: 17px;
-margin-top: -100px;
-margin-right: 0px;
-margin-left: 0px;
-margin-bottom: 0px;
-float: right;
+
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	font-family: "RobotoRegular", sans-serif;
+	overflow-x: hidden;
 }
-a{
-color: black;
+.hidden {
+	display: none;
+}
